@@ -1,0 +1,82 @@
+
+    /* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    /*  nếu muốn cái thuộc tính gì chỉ PC có thì css vào đây */
+    #about .about-header h4{
+        padding-left: 40px;
+    }
+
+    #about .about-header .about-header-nav {
+        right: 40px;
+    }
+
+    #about .about-intro {
+        height: 3000px;
+    }
+
+
+    .about-intro .about-intro-infor {
+        display: block;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .about-intro .about-intro-list {
+        padding-left: 40px;
+        padding-right: 40px;
+        display: block;
+    }
+
+    .col-third {
+        width: 100%;
+    }
+
+    .col-half {
+        width: 100%;
+    }
+
+    .about-intro-infor .information-content button {
+        position: initial;
+        margin-bottom: 18px;
+    }
+}
+
+    /* Mobille */
+@media (max-width: 740px) {
+    #about .about-header h4{
+        padding-left: 15px;
+    }
+
+    #about .about-header .about-header-nav {
+        right: 15px;
+    }
+
+    #about .about-intro {
+        height: 3000px;
+    }
+    
+    .col-third {
+        width: 100%;
+    }
+
+    .col-half {
+        width: 100%;
+    }
+
+    .about-intro .about-intro-infor {
+        display: block;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .about-intro .about-intro-list {
+        padding-left: 10px;
+        padding-right: 10px;
+        display: block;
+    }
+
+    .about-intro-infor .information-content button {
+        position: initial;
+        margin-bottom: 18px;
+    }
+}

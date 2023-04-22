@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    /* width: 100%; */
+}
+
+#header .header-top{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    padding: 10px 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+}
+
+/* header-top -> top-list */
+
+#header .header-top .top-list{
+    display: flex;
+    line-height: 29.2px;
+}
+
+.top-list .list-price-down button {
+    display: flex;
+    padding: 7px;
+    display: flex;
+    background-color: rgb(176, 180, 53);
+    color: #fff;
+    border: none;
+    width: 95px;
+} 
+
+.top-list .list-price-down:hover .list-price-select {
+    display: block;
+    list-style: none;
+}
+
+.list-price-down .list-price-select li:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.list-price-down .list-price-select {
+    display: none;
+}
+
+.list-price-down .list-price-select {
+    display: none;
+}
+.top-list .list-price-down {
+    position: relative;
+}
+
+.top-list .list-price-down .list-price-select {
+    position: absolute;
+    /* background-color: #ccc; */
+
+}
+
+.list-price-down button p {
+    padding-right: 35px;
+}
+
+.top-list .list-nav ul {
+    display: flex;
+}
+
+.top-list .list-phone {
+    padding-left: 10px;
+}
+
+.top-list .list-phone a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.top-list .list-phone a:hover {
+    cursor: pointer;
+    color:rgb(176, 180, 53);
+    transition-duration: 1s;
+}
+
+.top-list .list-nav {
+    padding-left: 15px;
+}
+
+.top-list .list-nav ul {
+    list-style: none;
+}
+
+.list-nav ul .nav-account a {
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.list-nav ul a i {
+    font-size: 14px;
+    padding-right: 3px;
+}
+
+.list-nav ul li {
+    font-weight: 600;
+}
+
+.list-nav ul a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.list-nav ul .nav-location {
+    padding: 0 10px;
+}
+
+ul .nav-location a {
+    padding-right: 10px;
+}
+
+.list-nav ul a:hover {
+    cursor: pointer;
+    color:rgb(176, 180, 53);
+    transition-duration: 1s;
+}
+
+/* header-top -> top-sign */
+#header .header-top .top-sign {
+    display: flex;
+    /* line-height: 29.2px; */
+}
+
+.header-top .top-sign .sign-qc {
+    padding-left: 158px;
+    padding-right: 403px;
+    font-weight: 600;
+}
+
+.top-sign .sign-qc i {
+    font-size: 14px;
+    margin-right: 10px;
+    color: rgb(176, 180, 53);
+}
+
+.top-sign .sign-here {
+    position: relative;
+}
+
+.top-sign .sign-here a {
+    display: flex;
+    padding: 7px;
+    display: flex;
+    background-color: rgb(176, 180, 53);
+    color: #fff;
+    border: none;
+    width: 120px;
+    text-decoration: none;
+} 
+
+.sign-here a i {
+    padding-left: 15px
+}
+
+.top-sign .sign-here:hover .sign-in {
+    cursor: pointer;
+    display: block;
+}
+
+.top-sign .sign-here .sign-in {
+    position: absolute;
+    display: none;
+}
+
+.top-sign .sign-here .sign-in:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* header bottom */
+
+#header .header-bottom {
+    display: flex;
+    height: 134px;
+    line-height: 134px;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 9000;
+    margin-top: 49px;
+}
+
+.header-bottom .bottom-logo a img{
+    margin-top: 12px;
+    margin-left: 204px
+}
+
+.header-bottom .bottom-list {
+    padding-left: 205px;
+}
+
+.header-bottom .bottom-list ul {
+    display: flex;
+    list-style: none;
+}
+
+.bottom-list ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+    padding-right: 45px;
+}
+
+.bottom-list ul .list-home a{
+    color: rgb(176, 180, 53);
+}
+
+.bottom-list ul a:hover{
+    color: rgb(176, 180, 53);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.bottom-list .list-shop a i{
+    padding-left: 3px;
+}
+
+#header .header-bottom .bottom-search {
+    display: flex;
+}
+
+.header-bottom .bottom-search .search {
+    line-height: 134px;
+    padding-right: 40px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.header-bottom .bottom-search .search:hover {
+    color: rgb(176, 180, 53);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.bottom-search .bottom-cart i{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.bottom-search .bottom-cart:hover {
+    color: rgb(176, 180, 53);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.header-bottom .header-mobile {
+    padding-left:30px;
+    position: relative;
+}
+
+.header-bottom .header-mobile .header-mobile-nav {
+    position: absolute;
+}
+
+.header-mobile .icon-list{
+    font-size: 20px;
+    border: 2px solid rgb(176, 180, 53);
+    padding: 10px;
+}
+
+.header-mobile .header-mobile-nav ul{
+    line-height: 37px;
+    list-style: none;
+}
+
+.mobile-nave-list li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+/* responsive */
+/* ipad */
+@media (min-width: 740px) and (max-width: 1023px){
+
+.top-list .list-price-down,
+.top-list .list-phone{
+    display: none;
+}
+
+.header-top .top-sign .sign-qc {
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+
+}
+
+
+/* mobile */
+@media (max-width: 740px){
+
+}

@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+/* start: instargram box */
+
+.ig-box {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    min-height: 443px;
+    background-image: url("./background.jpg");
+    position: relative;
+}
+
+.ig-box i {
+    top: 50%;
+    height: 46px;
+    width: 46px;
+    font-size: 35px;
+    text-align: center;
+    line-height: 46px;
+    /* padding: 0 20px; */
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(50%);
+}
+
+.ig-box i:first-child {
+    left: 13px;
+    display: none;
+}
+
+.ig-box i:last-child {
+    right: 13px;
+    /* display: none; */
+}
+
+.ig-box .slider1 {
+    /* bỏ khoảng cách giữa các img */
+    font-size: 0px;
+    cursor: pointer;
+    /* phần bị thừa sữa được ẩn đi */
+    overflow: hidden;
+    /* ảnh hiển thị lên một dòng */
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.slider1.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.slider1.dragging img {
+    pointer-events: none;
+}
+
+.slider1 img {
+    min-height: 303px;
+    /* giúp resize lại kích thước của img, cover giữ nguyên tỷ lệ co giãn, lấp đầy kích thước đã cho */
+    object-fit: cover;
+    width: calc(100% /4);
+}
+
+.slider1 img:first-child {
+    margin-left: 70px;
+}
+
+.slider1 img:last-child {
+    margin-right: 70px;
+}
+
+@media (min-width:740px) and (max-width:1024px){
+    .slider img{
+        width: calc(100% /2);
+    }
+}
+
+@media (max-width:740px){
+    .slider img{
+        width: 100%;
+    }
+}
+/* end: instargram box */
+
+
+/* start: footer */
+
+.row-footer{
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+}
+
+/* element giả để loại bỏ thuộc tính float */
+.row-footer::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.col-footer{
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 33.33333%;
+}
+
+#footer {
+    background-color: #000;
+    color: #fff;
+}
+
+#footer .footer-main {
+    padding: 30px 204px 70px 204px;
+}
+
+#footer .footer-main .main-top {
+    padding-bottom: 50px;
+}
+
+#footer .footer-main .col-footer h3 {
+    font-size: 20px;
+    padding-bottom: 5px;
+    padding-top: 30px;
+}
+
+#footer .footer-main .col-footer .hr-top{
+    height: 1px;
+    background-color: rgb(176, 180, 53);
+    border: none;
+    width: 50%;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.main-top .ft-time .ft-time-content {
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+/* newsletter */
+.ft-news .news-email textarea {
+    padding: 10px;
+}
+
+.news-email .news-email-botton i{
+    font-size: 40px;
+    color:rgb(176, 180, 53);
+}
+
+.main-top .ft-news button {
+    margin-top: 8px;
+    width: 70px;
+    height: 37px;
+    background-color: rgb(176, 180, 53);
+    border: none;
+    color: #fff;
+}
+
+/* social media */
+.main-top .ft-social .social-list ul{
+    list-style: none;
+    display: flex;
+    padding-top: 12px;
+}
+
+.main-top .ft-social p {
+    color: #ccc;
+}
+
+.social-list ul li {
+    border: 2px solid;
+    padding: 10px 12px;
+    margin-right: 5px;
+}
+
+.social-list ul li i{
+    font-size: 20px;
+    color: #fff;
+}
+
+.social-list ul li:hover {
+    background-color: rgb(176, 180, 53);
+    cursor: pointer;
+    transition: 1s;
+}
+
+/* main-bottom -> about freshshop */
+#footer .footer-main .col-footer .hr-bt{
+    height: 2px;
+    background-color: rgb(176, 180, 53);
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.main-bt .ft-about p {
+    color: #ccc;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* ft information */
+.main-bt .ft-infor ul{
+    list-style: none;
+    line-height: 2.2;
+}
+
+.ft-infor ul a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.ft-infor ul a:hover {
+    color: rgb(176, 180, 53);
+    cursor: pointer;
+    transition: 1s;
+    padding-right: 3px;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+/* contact us */
+.main-bt .ft-contact ul{
+    list-style: none;
+    color: #ccc;
+    line-height: 2.5;
+}
+
+.ft-contact ul i {
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding-bottom: 20px;
+}
