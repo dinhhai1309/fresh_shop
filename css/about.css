@@ -196,3 +196,111 @@
 /* end about-team */
 
 
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    /*  nếu muốn cái thuộc tính gì chỉ PC có thì css vào đây */
+    #about .about-header h4{
+        padding-left: 40px;
+    }
+
+    #about .about-header .about-header-nav {
+        right: 40px;
+    }
+
+    /* #about .about-intro {
+        height: 3000px;
+    } */
+
+
+    .about-intro .about-intro-infor {
+        display: block;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .about-intro .about-intro-list {
+        padding-left: 40px;
+        padding-right: 40px;
+        display: block;
+    }
+
+    .row {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        flex-wrap: wrap;
+    }
+
+    .col-four {
+        width: 45%;
+    }
+
+    .col-third {
+        width: 100%;
+    }
+
+    .col-half {
+        width: 100%;
+    }
+
+    .about-intro-infor .information-content button {
+        position: initial;
+        margin-bottom: 18px;
+    }
+
+    #about .about-header img {
+        width: 173%;
+        margin-left: -142px;
+    }
+}
+
+    /* Mobille */
+@media (max-width: 740px) {
+    #about .about-header h4{
+        padding-left: 15px;
+    }
+
+    #about .about-header .about-header-nav {
+        right: 15px;
+    }
+
+    .row {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .col-third {
+        width: 100%;
+    }
+
+    .col-half {
+        width: 100%;
+    }
+
+    .col-four {
+        width: 100%;
+    }
+
+    .about-intro .about-intro-infor {
+        display: block;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .about-intro .about-intro-list {
+        padding-left: 10px;
+        padding-right: 10px;
+        display: block;
+    }
+
+    .about-intro-infor .information-content button {
+        position: initial;
+        margin-bottom: 18px;
+    }
+
+    #about .about-intro {
+        height: 1335px;
+    }
+}
+
