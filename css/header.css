@@ -131,8 +131,8 @@ ul .nav-location a {
 }
 
 .header-top .top-sign .sign-qc {
-    padding-left: 158px;
-    padding-right: 403px;
+    padding-left: 11rem;
+    padding-right: 27rem;
     font-weight: 600;
 }
 
@@ -253,31 +253,61 @@ ul .nav-location a {
     transition: 1s;
 }
 
-.header-bottom .header-mobile {
-    padding-left:30px;
-    position: relative;
+/* list-nav cho mobile */
+.header-mobile {
+    padding-left: 50px;
+    padding-top: 182px;
+    display: none;
 }
 
-.header-bottom .header-mobile .header-mobile-nav {
-    position: absolute;
+.header-bottom .icon-list{
+    display: none;
 }
 
-.header-mobile .icon-list{
-    font-size: 20px;
-    border: 2px solid rgb(176, 180, 53);
-    padding: 10px;
-}
-
-.header-mobile .header-mobile-nav ul{
-    line-height: 37px;
+.header-mobile ul {
     list-style: none;
 }
 
-.mobile-nave-list li a{
+.header-mobile a{
     text-decoration: none;
     color: #000;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 600;
 }
+
+.header-mobile .mobile-nave-list hr {
+    background-color: #ccc;
+    height: 1px;
+    border: none;
+}
+
+.header-mobile li {
+    padding: 10px 0 10px 15px;
+}
+
+.header-mobile .list-home a:first-child {
+    color: rgb(176, 180, 53);
+}
+
+.header-mobile .mobile-nave-list {
+    margin-right: 35px;
+
+}
+
+.header-mobile .list-shop-mb .shop-nav{
+    display: none;
+}
+
+.mobile-nave-list .list-shop-mb i{
+    padding-left: 46rem;
+}
+
+.header-mobile .list-shop-mb {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600; 
+}
+
 
 /* responsive */
 /* ipad */
@@ -293,11 +323,80 @@ ul .nav-location a {
     padding-right: 40px;
 }
 
+.header-bottom .bottom-logo a img {
+    margin-left: 13rem;
+}
+
+.header-bottom .bottom-list {
+    display: none;
+}
+
+#header .header-bottom .bottom-search{
+    padding-left: 11rem;
+}
+
+.header-bottom .icon-list {
+    font-size: 20px;
+    display: grid;
+    align-content: center;
+    margin-left: 4rem;
+}
+
+.fa-bars:before, .fa-navicon:before{
+    border: 2px solid rgb(176, 180, 53);
+    padding: 10px;
+}
 
 }
 
 
 /* mobile */
 @media (max-width: 740px){
+    .top-list .list-price-down,
+    .top-list .list-nav,
+    .top-list .list-phone{
+        display: none;
+    }
 
+    .header-top .top-sign .sign-qc {
+        padding-left: 4rem;
+        padding-right: 3rem;
+    }
+
+    .header-bottom .icon-list {
+        font-size: 20px;
+        display: grid;
+        align-content: center;
+        margin-left: 2rem;
+    }
+
+    .header-mobile {
+        padding-left: 2rem;
+    }
+
+    .header-mobile .mobile-nave-list {
+        margin-right: 1rem;
+    }
+
+    .fa-bars:before, .fa-navicon:before{
+        border: 2px solid rgb(176, 180, 53);
+        padding: 10px;
+    }
+
+    .header-bottom .bottom-logo a img{
+        margin-left: 2rem;
+    }
+
+    .mobile-nave-list .list-shop-mb i {
+        padding-left: 22rem;
+    }
+
+    .header-bottom .bottom-list {
+        display: none;
+    }
+
+    .header-bottom .bottom-search .search{
+        padding-right: 18px;
+        padding-left: 10px;
+    }
 }
