@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 13px;
     /* width: 100%; */
 }
@@ -9,6 +9,7 @@
 /* start: slider */
 .home {
     padding-top: 183px;
+    position: relative;
 }
 
 .home .slider {
@@ -429,6 +430,7 @@
 }
 /* end latest */
 
+
 /* responsive cho home */
 /* ipad */
 @media (min-width: 740px) and (max-width: 1023px){
@@ -472,6 +474,7 @@
     .col-four-home-list {
         width: 45%;
     }
+
 
 }
    
@@ -542,4 +545,6 @@
         width: 225%;
         margin-left: -219px;
     }
+
+
 }
