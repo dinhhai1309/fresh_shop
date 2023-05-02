@@ -8,7 +8,10 @@
     <link rel="icon" href="./image/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
     <link rel="stylesheet" href="./css/header.css">
-    <!-- <link rel="stylesheet" href="./javascript/header.js"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./home.html">
+    <link rel="stylesheet" href="./about.html">
+
 </head>
 <body>
     <div id="header">
@@ -44,8 +47,14 @@
                     <i class="fa-solid fa-fire"></i> Off 50%! Shop now
                 </div>
                 <div class="sign-here">
-                    <a href="#">Register Here <i class="fa-solid fa-sort-down"></i></a>
-                    <a href="#" class="sign-in">Sign in</a>
+                    <button>
+                        Register Here <i class="fa-solid fa-sort-down"></i>
+                    </button>
+                    <div class="sign-here-list">
+                        <button class="sign-up"> Sign up</button>
+                        <button class="sign-in">Sign in</button>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -53,30 +62,44 @@
         <div class="header-bottom">
             <i class="fa-solid fa-bars icon-list"></i>
             <div class="bottom-logo">
-                <a href="#"><img src="./image/logo.png" alt="logo"></a>
+                <a href="./home.html"><img src="./image/logo.png" alt="logo"></a>
             </div>
             <div class="bottom-list">
                 <ul>
-                    <li class="list-home"><a href="#">HOME</a></li>
+                    <li class="list-home"><a href="./home.html">HOME</a></li>
                     <li class="list-about"><a href="./about.html">ABOUT US</a></li>
-                    <li class="list-shop"><a href="">SHOP <i class="fa-solid fa-sort-down"></i></a></li>
+                    <li class="list-shop"><button>SHOP <i class="fa-solid fa-sort-down"></i></button></li>
                     <li class="list-gallery"><a href="">GALLERY</a></li>
                     <li class="list-contact"><a href="">CONTACT US</a></li>
                 </ul>
             </div>
+
             <div class="bottom-search">
                 <i class="search fa-solid fa-magnifying-glass"></i>
                 <div class="bottom-cart">
                     <i class="fa-solid fa-cart-shopping"></i>
-                    My Cart
+                    <span>My Cart</span>
                 </div>
             </div>
         </div>
 
+        <!-- start: list-shop-nav: shop-nav -->
+        <div class="list-shop-nav">
+            <ul>
+                <li><a href="">Sidebar Shop</a></li>
+                <li><a href="">Shop Detail</a></li>
+                <li><a href="">Cart</a></li>
+                <li><a href="">Checkout</a></li>
+                <li><a href="">My Account</a></li>
+                <li><a href="">Wishlist</a></li>
+            </ul>
+        </div>
+        <!-- end: list-shop-nav: shop-nav -->
+
         <!-- header mobile -->
         <div class="header-mobile">
             <ul class="mobile-nave-list">
-                <li class="list-home"><a href="#">HOME</a></li>
+                <li class="list-home"><a href="./home.html">HOME</a></li>
                 <hr>
                 <li class="list-about"><a href="./about.html">ABOUT US</a></li>
                 <hr>
@@ -102,6 +125,81 @@
                 <hr>
             </ul>
         </div>
+
+        <!-- start: sign in -->
+        <div class="sign-in-detail">
+            <div class="sign-in-layout">
+                <button><i class="fa-solid fa-xmark"></i></button>
+                <div class="sign-in-title">
+                    <img src="./image/logo.png" alt="">
+                    <h4>Welcome to Fresh Shop</h4>
+                </div>
+
+                <input type="email" name="" class="sign-in-email" placeholder="Email">
+
+                <div class="sign-in-pass">
+                    <input type="password" name="" placeholder="Password">
+                    <br>
+                    <a href="#">Forgot your password?</a>
+                </div>
+
+                <div class="sign-in-login">
+                    <button>Log in</button>
+                    <br>
+                    OR
+                </div>
+
+                <div class="sign-in-connect">
+                    <button class="connect-f"><i class="fa-brands fa-facebook"></i>Continue with Facebook</button>
+                    <br>
+                    <button class="connect-g"><i class="fa-brands fa-google"></i>Continue with Google</button>
+                </div>
+
+                <div class="sign-in-last">
+                    Not on Fresh Shop yet?
+                    <button class="btnSignUp">Sign up</button>
+                </div>
+                
+            </div>
+        </div>
+        <!-- end: sign in -->
+
+        <!-- start: sign up -->
+        <div class="sign-up-detail">
+            <div class="sign-in-layout">
+                <button><i class="fa-solid fa-xmark icon-up"></i></button>
+                <div class="sign-in-title">
+                    <img src="./image/logo.png" alt="">
+                    <h4>Welcome to Fresh Shop</h4>
+                </div>
+
+                <input type="email" name="" class="sign-in-email" placeholder="Email">
+
+                <div class="sign-in-pass">
+                    <input type="password" name="" placeholder="Create a password">
+                    <br>
+                </div>
+
+                <div class="sign-in-login">
+                    <button>Continue</button>
+                    <br>
+                    OR
+                </div>
+
+                <div class="sign-in-connect">
+                    <button class="connect-f"><i class="fa-brands fa-facebook"></i>Continue with Facebook</button>
+                    <br>
+                    <button class="connect-g"><i class="fa-brands fa-google"></i>Continue with Google</button>
+                </div>
+
+                <div class="sign-in-last">
+                    Already a member?
+                    <button class="btnLogIn">Log in</button>
+                </div>
+                
+            </div>
+        </div>
+        <!-- end: sign up -->
     </div>
     
 </body>
