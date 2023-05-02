@@ -1,9 +1,12 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 13px;
     /* width: 100%; */
+}
+#header {
+    position: relative;
 }
 
 #header .header-top{
@@ -13,7 +16,7 @@
     padding: 10px 15px;
     position: fixed;
     width: 100%;
-    z-index: 10000;
+    z-index: 1050;
 }
 
 /* header-top -> top-list */
@@ -33,35 +36,23 @@
     width: 95px;
 } 
 
-.top-list .list-price-down:hover .list-price-select {
-    display: block;
-    list-style: none;
-}
-
-.list-price-down .list-price-select li:hover{
-    opacity: 0.8;
-    cursor: pointer;
-}
-
-.list-price-down .list-price-select {
-    display: none;
-}
-
-.list-price-down .list-price-select {
-    display: none;
-}
 .top-list .list-price-down {
     position: relative;
 }
 
 .top-list .list-price-down .list-price-select {
     position: absolute;
-    /* background-color: #ccc; */
-
+    display: none;
+    list-style: none;
 }
 
 .list-price-down button p {
     padding-right: 35px;
+}
+
+.list-price-down button:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 .top-list .list-nav ul {
@@ -146,7 +137,7 @@ ul .nav-location a {
     position: relative;
 }
 
-.top-sign .sign-here a {
+.top-sign .sign-here button {
     display: flex;
     padding: 7px;
     display: flex;
@@ -157,20 +148,17 @@ ul .nav-location a {
     text-decoration: none;
 } 
 
-.sign-here a i {
+.sign-here button i {
     padding-left: 15px
 }
 
-.top-sign .sign-here:hover .sign-in {
-    cursor: pointer;
-    display: block;
-}
-
-.top-sign .sign-here .sign-in {
+.top-sign .sign-here .sign-here-list {
     position: absolute;
     display: none;
+    text-align: left;
 }
 
+.top-sign .sign-here .sign-up:hover,
 .top-sign .sign-here .sign-in:hover {
     opacity: 0.8;
     cursor: pointer;
@@ -185,7 +173,7 @@ ul .nav-location a {
     position: fixed;
     background-color: #fff;
     width: 100%;
-    z-index: 9000;
+    z-index: 1000;
     margin-top: 49px;
 }
 
@@ -203,6 +191,12 @@ ul .nav-location a {
     list-style: none;
 }
 
+.bottom-list .list-shop button{
+    border: none;
+    background-color: #fff;
+}
+
+.bottom-list .list-shop button,
 .bottom-list ul li a{
     text-decoration: none;
     color: #000;
@@ -215,6 +209,7 @@ ul .nav-location a {
     color: rgb(176, 180, 53);
 }
 
+.bottom-list .list-shop button:hover,
 .bottom-list ul a:hover{
     color: rgb(176, 180, 53);
     cursor: pointer;
@@ -223,6 +218,30 @@ ul .nav-location a {
 
 .bottom-list .list-shop a i{
     padding-left: 3px;
+}
+
+.list-shop-nav{
+    position: fixed;
+    margin-top: 149px;
+    z-index: 1100;
+    margin-left: 813px;
+    background-color: #000;
+    line-height: 2;
+    width: 119px;
+    padding: 10px 20px;
+    display: none;
+}
+
+.list-shop-nav ul a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.list-shop-nav ul li:hover a{
+    color: rgb(176, 180, 53);
+    font-size: 17px;
+    font-weight: 600;
 }
 
 #header .header-bottom .bottom-search {
@@ -309,6 +328,141 @@ ul .nav-location a {
 }
 
 
+/* start sign-in-detail, sign-up-detail */
+.sign-up-detail ,
+.sign-in-detail {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1110;
+    display: none;
+    
+}
+
+.sign-up-detail .sign-in-layout,
+.sign-in-detail .sign-in-layout{
+    background-color: #fff;
+    width: 30rem;
+    margin: 52px 40rem;
+    text-align: center;
+    padding: 15px 90px;
+}
+
+.sign-in-layout {
+    position: relative;
+    animation: modalSignin ease 1s;
+}
+
+.sign-in-layout .sign-in-title .sign-in-logo{
+    display: flex;
+}
+
+.sign-in-layout .fa-xmark {
+    font-size: 20px;
+    background-color: rgb(176, 180, 53);
+    color: #fff;
+    height: 18px;
+    padding: 10px 15px;
+    position: absolute;
+    z-index: 1110;
+    top: 0;
+    right: 0;
+}
+
+.sign-in-layout .fa-xmark:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.sign-in-layout .sign-in-title h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: #aaa8a8;
+    font-style: italic;
+}
+
+.sign-in-layout .sign-in-pass input,
+.sign-in-layout .sign-in-email {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    margin: 15px 0;
+    padding-left: 10px;
+}
+
+.sign-in-layout .sign-in-pass a{
+    color: #000;
+}
+
+.sign-in-layout .sign-in-login button{
+    margin: 15px 0;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    background-color: #cc0f0f;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sign-in-layout .sign-in-connect .connect-f{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #04049f;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin: 15px 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.sign-in-connect .connect-g i,
+.sign-in-connect .connect-f i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.sign-in-layout .sign-in-connect .connect-g{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #298bd2;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin: 15px 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.sign-in-layout .sign-in-last button{
+    background-color: rgb(176, 180, 53);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+@keyframes modalSignin{
+    from{
+        opacity: 0;
+        transform: translateY(-500px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+/* end sign-in-detail,sign-up-detail */
+
+
+
 /* responsive */
 /* ipad */
 @media (min-width: 740px) and (max-width: 1023px){
@@ -347,6 +501,10 @@ ul .nav-location a {
     padding: 10px;
 }
 
+.sign-up-detail .sign-in-layout,
+.sign-in-detail .sign-in-layout{
+    margin: 182px 8rem;
+}
 }
 
 
@@ -398,5 +556,12 @@ ul .nav-location a {
     .header-bottom .bottom-search .search{
         padding-right: 18px;
         padding-left: 10px;
+    }
+
+    .sign-up-detail .sign-in-layout,
+    .sign-in-detail .sign-in-layout{
+        margin: 76px 1rem;
+        width: 24rem;
+        padding: 30px 40px;
     }
 }
