@@ -1,26 +1,26 @@
-let index = 0;
-const slides = document.getElementsByClassName('slider-item');
+let index1 = 0;
+const slides1 = document.getElementsByClassName('slider-item');
 const sliderNavs = this.document.querySelectorAll(".fa-square");
 function Hien_thi_slide() {
   for (let i = 0; i < slides.length; i++) {
-    slides[i].style.transform = `translateX(-${index * 100}%)`;
+    slides1[i].style.transform = `translateX(-${index1 * 100}%)`;
   }
 }
 
 function next() {
-  if (index < slides.length - 1) {
-    index++;
+  if (index1 < slides1.length - 1) {
+    index1++;
   } else {
-    index = 0;
+    index1 = 0;
   }
   Hien_thi_slide();
 }
 
 function prev() {
-  if (index > 0) {
-    index--;
+  if (index1 > 0) {
+    index1--;
   } else {
-    index = slides.length - 1;
+    index1 = slides1.length - 1;
   }
   Hien_thi_slide();
 }

@@ -193,31 +193,31 @@ document.getElementById('footer').innerHTML = `
 <div class="ig-box">
         <i id ="left" class="fa-solid fa-arrow-left " onclick="next()"></i>
         <div class="slider1">
-            <div class="slider">
+            <div class="sliderm">
                 <img src="./image/instargram-box/instagram-img-01.jpg">
             </div>
-            <div class="slider">
+            <div class="sliderm">
                 <img src="./image/instargram-box/instagram-img-02.jpg">
             </div>
-            <div class="slider">
+            <div class="sliderm">
                 <img src="./image/instargram-box/instagram-img-03.jpg">
             </div>
-            <div class="slider">
+            <div class="sliderm">
                 <img src="./image/instargram-box/instagram-img-04.jpg">
             </div>
-            <div class="slider">
+            <div class="sliderm">
                 <img src="./image/instargram-box/instagram-img-05.jpg">
             </div>
-            <div class="slider">
+            <div class="sliderm">
                 <img src="./image/instargram-box/instagram-img-06.jpg">
             </div>
-            <div class="slider">
+            <div class="sliderm">
                 <img src="./image/instargram-box/instagram-img-07.jpg">
             </div>
-            <div class="slider">
+            <div class="sliderm">
                 <img src="./image/instargram-box/instagram-img-08.jpg">
             </div>
-            <div class="slider">
+            <div class="sliderm">
                 <img src="./image/instargram-box/instagram-img-09.jpg"> 
             </div>
         </div>
