@@ -51,11 +51,11 @@ document.getElementById('header').innerHTML = `
             </div>
             <div class="bottom-list">
                 <ul>
-                    <li class="list-home"><a href="./home.html">HOME</a></li>
-                    <li class="list-about"><a href="./about.html">ABOUT US</a></li>
-                    <li class="list-shop"><button>SHOP <i class="fa-solid fa-sort-down"></i></button></li>
-                    <li class="list-gallery"><a href="">GALLERY</a></li>
-                    <li class="list-contact"><a href="">CONTACT US</a></li>
+                    <li class="tab-item list-home">HOME</li>
+                    <li class="tab-item list-aboutc">ABOUT US</li>
+                    <li class="tab-item list-shop">SHOP <i class="fa-solid fa-sort-down"></i></li>
+                    <li class="tab-item list-gallery">GALLERY</li>
+                    <li class="tab-item list-contact">CONTACT US</li>
                 </ul>
             </div>
 
@@ -191,21 +191,38 @@ document.getElementById('header').innerHTML = `
 document.getElementById('footer').innerHTML = `
 <!-- start instagram box -->
 <div class="ig-box">
-    <i id ="left" class="fa-solid fa-arrow-left" ></i>
-    <div class="slider1">
-        <img src="./image/instargram-box/instagram-img-01.jpg" alt="img" draggable="false">
-        <img src="./image/instargram-box/instagram-img-02.jpg" alt="img" draggable="false">
-        <img src="./image/instargram-box/instagram-img-03.jpg" alt="img" draggable="false">
-        <img src="./image/instargram-box/instagram-img-04.jpg" alt="img" draggable="false">
-        <img src="./image/instargram-box/instagram-img-05.jpg" alt="img" draggable="false">
-        <img src="./image/instargram-box/instagram-img-06.jpg" alt="img" draggable="false">
-        <img src="./image/instargram-box/instagram-img-07.jpg" alt="img" draggable="false">
-        <img src="./image/instargram-box/instagram-img-08.jpg" alt="img" draggable="false">
-        <img src="./image/instargram-box/instagram-img-09.jpg" alt="img" draggable="false">
-
+        <i id ="left" class="fa-solid fa-arrow-left " onclick="next()"></i>
+        <div class="slider1">
+            <div class="slider">
+                <img src="./image/instargram-box/instagram-img-01.jpg">
+            </div>
+            <div class="slider">
+                <img src="./image/instargram-box/instagram-img-02.jpg">
+            </div>
+            <div class="slider">
+                <img src="./image/instargram-box/instagram-img-03.jpg">
+            </div>
+            <div class="slider">
+                <img src="./image/instargram-box/instagram-img-04.jpg">
+            </div>
+            <div class="slider">
+                <img src="./image/instargram-box/instagram-img-05.jpg">
+            </div>
+            <div class="slider">
+                <img src="./image/instargram-box/instagram-img-06.jpg">
+            </div>
+            <div class="slider">
+                <img src="./image/instargram-box/instagram-img-07.jpg">
+            </div>
+            <div class="slider">
+                <img src="./image/instargram-box/instagram-img-08.jpg">
+            </div>
+            <div class="slider">
+                <img src="./image/instargram-box/instagram-img-09.jpg"> 
+            </div>
+        </div>
+        <i id ="right" class="fa-solid fa-arrow-right" onclick="prev()"></i>
     </div>
-    <i id ="right" class="fa-solid fa-arrow-right"></i>
-</div>
 <!-- end instagram box -->
 
 <!-- start footer -->
@@ -291,3 +308,12 @@ document.getElementById('footer').innerHTML = `
         All Rights Reserved. © 2018 ThewayShop Design By : html design  </div>
 </div>
 `
+
+
+if(document.getElementById('about')) {
+    document.querySelector('.list-aboutc').classList = 'active'
+}
+
+if(document.querySelector('.home')) {
+    document.querySelector('.list-home').classList = 'active'
+}

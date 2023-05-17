@@ -11,16 +11,15 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/header.css"> 
     <link rel="stylesheet" href="./css/home.css">
-    <script src="./javascript/ig-box.js" defer></script>
-    <script src="./javascript/home-slider-img.js" defer></script>
+   
 </head>
 <body>
-    <div id="header"></div>
+    <div id="header"></div> 
     <div class="home">
         <!-- start slider -->
         <div class="slider">
-            <i class="fa-solid fa-arrow-left" ></i>
-            
+            <i class="fa-solid fa-arrow-left" onclick="next()" ></i>
+            <i class="fa-solid fa-arrow-right" onclick="prev()"></i>
              <div class="slider-wrapper">
                 <div class="slider-main">
                     <div class="slider-item">
@@ -40,12 +39,12 @@
                 trends to see any changes in performance over time. </p>
                 <a href="#">SHOP NEW</a>
             </div>
-            <ul class="slider-nav">
-                <li><i class="fa-regular fa-square one active" data-index="0"></i></li>
-                <li><i class="fa-regular fa-square two" data-index="1"></i></li>
-                <li><i class="fa-regular fa-square three" data-index="2"></i></li>
-            </ul>
-            <i class="fa-solid fa-arrow-right" ></i>
+            <!-- <ul class="slider-nav">
+                <li><i class="fa-regular fa-square one active"  onclick="img1()"></i></li>
+                <li><i class="fa-regular fa-square two"  onclick="img2()"></i></li>
+                <li><i class="fa-regular fa-square three"  onclick="img3()"></i></li>
+            </ul> -->
+            
         </div>
         <!-- end slider -->
 
@@ -216,5 +215,7 @@
     <div id="footer"></div>
 </body>
  <script src="./javascript/layout.js"></script> 
+ <script src="./javascript/ig-box.js"></script>
  <script src="./javascript/header.js"></script>
+ <script src="./javascript/home-slider-img.js"></script>
 </html>

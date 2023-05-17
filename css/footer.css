@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     /* justify-content: center; */
-    min-height: 443px;
+    min-height: 380px;
     background-image: url("./background.jpg");
     position: relative;
 }
@@ -49,30 +49,16 @@
     /* ảnh hiển thị lên một dòng */
     white-space: nowrap;
     scroll-behavior: smooth;
-}
-
-.slider1.dragging {
-    cursor: grab;
-    scroll-behavior: auto;
-}
-
-.slider1.dragging img {
-    pointer-events: none;
+    display: flex;
+    padding-left: 75px;
+    padding-right: 75px;
 }
 
 .slider1 img {
-    min-height: 303px;
     /* giúp resize lại kích thước của img, cover giữ nguyên tỷ lệ co giãn, lấp đầy kích thước đã cho */
     object-fit: cover;
-    width: calc(100% /4);
-}
-
-.slider1 img:first-child {
-    margin-left: 70px;
-}
-
-.slider1 img:last-child {
-    margin-right: 70px;
+    width: 300px;
+ 
 }
 
 @media (min-width:740px) and (max-width:1024px){

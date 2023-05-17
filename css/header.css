@@ -191,13 +191,7 @@ ul .nav-location a {
     list-style: none;
 }
 
-.bottom-list .list-shop button{
-    border: none;
-    background-color: #fff;
-}
-
-.bottom-list .list-shop button,
-.bottom-list ul li a{
+.bottom-list ul li {
     text-decoration: none;
     color: #000;
     font-weight: 600;
@@ -205,18 +199,18 @@ ul .nav-location a {
     padding-right: 45px;
 }
 
-.bottom-list ul .list-home a{
+.bottom-list .active{
     color: rgb(176, 180, 53);
 }
 
-.bottom-list .list-shop button:hover,
-.bottom-list ul a:hover{
+
+.bottom-list ul li:hover{
     color: rgb(176, 180, 53);
     cursor: pointer;
     transition: 1s;
 }
 
-.bottom-list .list-shop a i{
+.bottom-list .list-shop i{
     padding-left: 3px;
 }
 
@@ -272,6 +266,9 @@ ul .nav-location a {
     transition: 1s;
 }
 
+.header-bottom .icon-list{
+    display: none;
+}
 /* list-nav cho mobile */
 .header-mobile {
     padding-left: 50px;
@@ -279,9 +276,7 @@ ul .nav-location a {
     display: none;
 }
 
-.header-bottom .icon-list{
-    display: none;
-}
+
 
 .header-mobile ul {
     list-style: none;
@@ -304,7 +299,7 @@ ul .nav-location a {
     padding: 10px 0 10px 15px;
 }
 
-.header-mobile .list-home a:first-child {
+.active {
     color: rgb(176, 180, 53);
 }
 

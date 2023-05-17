@@ -11,6 +11,10 @@ const exit_ = document.querySelector('.sign-in-detail')
 const exit_up = document.querySelector('.sign-up-detail')
 const btnLogIn = document.querySelector('.btnLogIn')
 const btnSignUp = document.querySelector('.btnSignUp')
+const sign_layout = document.querySelectorAll('.sign-in-layout')
+const list_about = document.querySelector('.list-aboutc')
+const list_home = document.querySelector('.list-home')
+
 const isShow = false;
 shop.addEventListener('click',function (){
     this.isShow = !this.isShow;
@@ -98,4 +102,37 @@ btnLogIn.addEventListener('click',function() {
 btnSignUp.addEventListener('click',function() {
     document.querySelector('.sign-in-detail').style.display = 'none';
     document.querySelector('.sign-up-detail').style.display = 'block';
+})
+
+// khi ấn vào sign-in-layout sẽ không bị thoát ra, dừng sự kiện nổi bọt, lọc tất cả class sign_layout nghe từng hành vi
+for(const i of sign_layout){
+    i.addEventListener('click',function(event){
+    event.stopPropagation()
+})}
+
+// start: tạo sự kiện cho bottom-list đổi màu với web-page tương ứng
+const $ = document.querySelector.bind(document)
+const $$ = document.querySelectorAll.bind(document)
+
+const tabs = $$('.tab-item')
+console.log(tabs)
+tabs.forEach((tab) => {
+    tab.onclick = function () {
+      if (this.classList.contains('active')) {
+        this.classList.remove('active');
+      } else {
+        $$('.tab-item.active').forEach((activeTab) => {
+          activeTab.classList.remove('active');
+        });
+        this.classList.add('active');
+      }
+    };
+});
+
+list_home.addEventListener('click',function() {
+    window.location.href = "http://127.0.0.1:5500/home.html";
+})
+
+list_about.addEventListener('click',function() {
+    window.location.href = "http://127.0.0.1:5500/about.html";
 })
